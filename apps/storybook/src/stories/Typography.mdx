@@ -1,0 +1,276 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Typography/Variants" />
+
+export const typography = {
+    type: {
+        primary: 'DM Sans',
+    },
+    weight: {
+        regular: '400',
+        medium: '500',
+        semibold: '600'
+    },
+    headline: {
+        1: { fontSize: '32px', lineHeight: '40px', letterSpacing: '-1.25px', style: 'Original' },
+        2: { fontSize: '28px', lineHeight: '36px', letterSpacing: '-1.00px', style: 'Original' },
+        3: { fontSize: '24px', lineHeight: '32px', letterSpacing: '-1.00px', style: 'Original' },
+    },
+    title: {
+        1: { fontSize: '20px', lineHeight: '28px', letterSpacing: '-0.50px', style: 'Original' },
+        2: { fontSize: '16px', lineHeight: '24px', letterSpacing: '-0.50px', style: 'Original' },
+        3: { fontSize: '14px', lineHeight: '20px', letterSpacing: '-0.25px', style: 'Original' },
+    },
+    body: {
+        1: { fontSize: '16px', lineHeight: '24px', letterSpacing: '-0.10px', style: 'Original' },
+        2: { fontSize: '14px', lineHeight: '20px', letterSpacing: '0.00px', style: 'Original' },
+        3: { fontSize: '13px', lineHeight: '20px', letterSpacing: '0.00px', style: 'Original' },
+    },
+    label: {
+        1: { fontSize: '16px', lineHeight: '24px', letterSpacing: '0.15px', style: 'Original' },
+        2: { fontSize: '14px', lineHeight: '20px', letterSpacing: '0.10px', style: 'Original' },
+        3: { fontSize: '14px', lineHeight: '20px', letterSpacing: '0.10px', style: 'Original' },
+        4: { fontSize: '13px', lineHeight: '16px', letterSpacing: '0.00px', style: 'Original' },
+        5: { fontSize: '12px', lineHeight: '16px', letterSpacing: '0.00px', style: 'Original' },
+    },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Headline 1
+<Typeset
+    fontSizes={[ typography.headline[1].fontSize ]}
+    fontWeight={ typography.weight.semibold }
+    sampleText="Headline 1"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.headline[1].fontSize,
+    lineHeight: typography.headline[1].lineHeight,
+    letterSpacing: typography.headline[1].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.semibold,
+}}>
+    {SampleText}
+</p>
+
+# Headline 2
+<Typeset
+    fontSizes={[ typography.headline[2].fontSize ]}
+    fontWeight={ typography.weight.semibold }
+    sampleText="Headline 2"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.headline[2].fontSize,
+    lineHeight: typography.headline[2].lineHeight,
+    letterSpacing: typography.headline[2].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.semibold,
+}}>
+    Lorem ipsum
+</p>
+
+# Headline 3
+<Typeset
+    fontSizes={[ typography.headline[3].fontSize ]}
+    fontWeight={ typography.weight.semibold }
+    sampleText="Headline 3"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.headline[3].fontSize,
+    lineHeight: typography.headline[3].lineHeight,
+    letterSpacing: typography.headline[3].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.semibold,
+}}>
+    Lorem ipsum
+</p>
+
+# Title 1
+<Typeset
+    fontSizes={[ typography.title[1].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Title 1"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.title[1].fontSize,
+    lineHeight: typography.title[1].lineHeight,
+    letterSpacing: typography.title[1].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Title 2
+<Typeset
+    fontSizes={[ typography.title[2].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Title 2"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.title[2].fontSize,
+    lineHeight: typography.title[2].lineHeight,
+    letterSpacing: typography.title[2].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Title 3
+<Typeset
+    fontSizes={[ typography.title[3].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Title 3"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.title[3].fontSize,
+    lineHeight: typography.title[3].lineHeight,
+    letterSpacing: typography.title[3].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Body 1
+<Typeset
+    fontSizes={[ typography.body[1].fontSize ]}
+    fontWeight={ typography.weight.regular }
+    sampleText="Body 1"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.body[1].fontSize,
+    lineHeight: typography.body[1].lineHeight,
+    letterSpacing: typography.body[1].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.regular,
+}}>
+    Lorem ipsum
+</p>
+
+# Body 2
+<Typeset
+    fontSizes={[ typography.body[2].fontSize ]}
+    fontWeight={ typography.weight.regular }
+    sampleText="Body 2"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.body[2].fontSize,
+    lineHeight: typography.body[2].lineHeight,
+    letterSpacing: typography.body[2].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.regular,
+}}>
+    Lorem ipsum
+</p>
+
+# Body 3
+<Typeset
+    fontSizes={[ typography.body[3].fontSize ]}
+    fontWeight={ typography.weight.regular }
+    sampleText="Body 3"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.body[3].fontSize,
+    lineHeight: typography.body[3].lineHeight,
+    letterSpacing: typography.body[3].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.regular,
+}}>
+    Lorem ipsum
+</p>
+
+# Label 1
+<Typeset
+    fontSizes={[ typography.label[1].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Label 1"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.label[1].fontSize,
+    lineHeight: typography.label[1].lineHeight,
+    letterSpacing: typography.label[1].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Label 2
+<Typeset
+    fontSizes={[ typography.label[2].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Label 2"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.label[2].fontSize,
+    lineHeight: typography.label[2].lineHeight,
+    letterSpacing: typography.label[2].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Label 3
+<Typeset
+    fontSizes={[ typography.label[3].fontSize ]}
+    fontWeight={ typography.weight.regular }
+    sampleText="Label 3"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.label[3].fontSize,
+    lineHeight: typography.label[3].lineHeight,
+    letterSpacing: typography.label[3].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.regular,
+}}>
+    Lorem ipsum
+</p>
+
+# Label 4
+<Typeset
+    fontSizes={[ typography.label[4].fontSize ]}
+    fontWeight={ typography.weight.medium }
+    sampleText="Label 4"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.label[4].fontSize,
+    lineHeight: typography.label[4].lineHeight,
+    letterSpacing: typography.label[4].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.medium,
+}}>
+    Lorem ipsum
+</p>
+
+# Label 5
+<Typeset
+    fontSizes={[ typography.label[5].fontSize ]}
+    fontWeight={ typography.weight.regular }
+    sampleText="Label 5"
+    fontFamily={ typography.type.primary }
+/>
+<p style={{
+    fontSize: typography.label[5].fontSize,
+    lineHeight: typography.label[5].lineHeight,
+    letterSpacing: typography.label[5].letterSpacing,
+    fontFamily: typography.type.primary,
+    fontWeight: typography.weight.regular,
+}}>
+    Lorem ipsum
+</p>
